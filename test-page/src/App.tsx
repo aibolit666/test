@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import OpenAccount from 'pages/OpenAccount/OpenAccount';
+import OpenAccountNew from 'pages/OpenAccount/OpenAccountNew';
 
 function App() {
   return (
     <div className="App">
       <>
         <Routes>
-          <Route path="/open-account/new" element={<OpenAccount />} />
+          <Route path="/open-account/new" element={<OpenAccountNew />} />
         </Routes>
       </>
     </div>

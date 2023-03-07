@@ -4,7 +4,7 @@ import './style.scss';
 const OpenAccount = () => {
   return (
     <>
-      <div className="title">MAIN</div>
+      <div className="open-account-title">new</div>
     </>
   );
 };
