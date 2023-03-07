@@ -1,6 +1,80 @@
+@import "App.scss";
+
 .alert {
-  width: 1580px;
-  height: 64px;
+  width: 1555px;
+  height: 40px;
   margin-top: 8px;
+  margin-left: 35px;
   margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 12px;
+  gap: 12px;
+  background: $alert-background;
+  border-radius: 12px;
+}
+
+.alert-logo {
+  width: 40px;
+  height: 40px;
+  background-color: #282A2F;
+  border-radius: 12px;
+  display: flex;
+}
+
+.alert-content-wrapper {
+  min-width: max-content;
+  margin-left: 12px;
+  color: $white;
+  font-size: 14px;
+}
+
+.alert-link {
+  margin-left: 5px;
+  color: #8CA4FF;
+  text-decoration: none;
+}
+
+.alert-link:hover {
+  filter: brightness(110%);
+}
+
+.alert-btns {
+  display: flex;
+  align-items: center;
+
+}
+
+.btn-alert-confirm {
+  width: 117px;
+  height: 32px;
+  border-radius: 25px;
+  border: 1px solid $grey;
+  background: $grey;
+  color: $white;
+}
+
+.btn-alert-more {
+  margin-left: 8px;
+  padding-left: 6px;
+  padding-bottom: 8px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  width: 32px;
+  height: 32px;
+  border-radius: 25px;
+  border: 1px solid $grey;
+  background: $grey;
+  color: $white;
+}
+
+.btn-alert-close {
+  margin-left: 12px;
+  background: none;
+  border: none;
+  color: $white;
+  font-size: 28px;
+  transform: rotate(45deg);
 }
