@@ -2,8 +2,9 @@
 
 .footer {
   background-color: $background;
+  color: $dark-grey;
   @extend .small-text;
-  width: 1920px;
+  width: 100%;
   height: 62px;
   display: flex;
   align-items: center;
