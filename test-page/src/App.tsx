@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import { Route, Routes } from 'react-router-dom';
 import OpenAccountNew from 'pages/OpenAccount/OpenAccountNew';
 import Footer from 'components/Footer/Footer';

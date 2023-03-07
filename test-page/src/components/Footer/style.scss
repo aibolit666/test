@@ -1,0 +1,11 @@
+@import "App.scss";
+
+.footer {
+  background-color: $background;
+  @extend .small-text;
+  width: 1920px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
