@@ -2,7 +2,7 @@
   "name": "test-page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://aibolit666.github.io/test",
+  "homepage": "https://aibolit666.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -22,7 +22,8 @@
     "eslint-import-resolver-typescript": "^3.5.1",
     "eslint-plugin-prettier": "^4.2.1",
     "lint-staged": "^13.0.3",
-    "prop-types": "^15.8.1"
+    "prop-types": "^15.8.1",
+    "react-router-dom": "^6.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
