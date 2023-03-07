@@ -1,0 +1,19 @@
+$background: #1D1E21;
+
+.header {
+  background-color: $background;
+  width: 1920px;
+  height: 80px;
+}
+
+.logo {
+  width: 260px;
+  height: 80px;
+}
+
+.logo-pic {
+  display: flex;
+  justify-content: start;
+  padding-top: 16px;
+  padding-left: 22px;
+}
