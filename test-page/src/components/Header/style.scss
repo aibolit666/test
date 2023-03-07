@@ -91,14 +91,14 @@
   border: none;
   width: 22px;
   height: 22px;
-  fill: white;
+  fill: $white;
 }
 
 .btn-settings:hover,
 .btn-notification:hover,
 .btn-exit:hover {
   cursor: pointer;
-  fill: wheat;
+  fill: $wheat;
 }
 
 .btn-settings:active,

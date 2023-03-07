@@ -4,7 +4,7 @@ import './style.scss';
 const Information = () => {
   return (
     <>
-      <div className=""></div>
+      <aside className="info-aside"></aside>
     </>
   );
 };

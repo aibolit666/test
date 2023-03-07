@@ -4,7 +4,7 @@ import './style.scss';
 const Menu = () => {
   return (
     <>
-      <div className=""></div>
+      <div className="menu"></div>
     </>
   );
 };

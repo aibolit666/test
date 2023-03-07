@@ -4,7 +4,7 @@ import './style.scss';
 const Alert = () => {
   return (
     <>
-      <div className=""></div>
+      <div className="alert"></div>
     </>
   );
 };

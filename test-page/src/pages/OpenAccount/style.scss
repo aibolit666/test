@@ -1,0 +1,17 @@
+@import "App.scss";
+
+.page-wrapper {
+  display: flex;
+  background-color: $background;
+}
+
+.new-account-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-account-wrapper-content {
+  display: flex;
+  justify-content: space-between;
+  min-height: 860px;
+}
