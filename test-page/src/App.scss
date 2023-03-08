@@ -6,12 +6,21 @@ $white: #FFFFFF;
 $wheat: wheat;
 $alert-background: #6E6156;
 $grey: #282A2F;
+$proxima-nova: proxima-nova, sans-serif;
 
 .small-text {
-  font-family: 'Proxima Nova';
+  font-family: $proxima-nova;
   font-style: normal;
   font-size: 8px;
   line-height: 14px;
-  letter-spacing: 0.8px;
   font-weight: 400;
+}
+
+.normal-text {
+  font-family: $proxima-nova;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $normal-grey;
 }

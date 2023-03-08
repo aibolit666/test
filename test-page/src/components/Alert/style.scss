@@ -5,7 +5,6 @@
   height: 40px;
   margin-top: 8px;
   margin-left: 35px;
-  margin-bottom: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,8 +26,10 @@
 .alert-content-wrapper {
   min-width: max-content;
   margin-left: 12px;
+  @extend .normal-text;
   color: $white;
   font-size: 14px;
+
 }
 
 .alert-link {

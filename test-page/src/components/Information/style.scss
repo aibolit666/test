@@ -1,6 +1,27 @@
+@import "App.scss";
+
 .info-aside {
-  min-width: 495px;
-  // min-height: 955px;
+  min-width: 450px;
   background: #24262A;
   border-radius: 0px 16px 16px 0px;
+  @extend .normal-text;
+  padding: 24px;
+}
+
+.info-aside-information {
+  max-width: 390px;
+  height: max-content;
+  border: 2px solid $grey;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 24px;
+  margin-bottom: 24px;
+}
+
+.info-aside-title {
+  font-weight: 700;
+}
+
+.info-aside-content {
+  margin-bottom: 8px;
 }
