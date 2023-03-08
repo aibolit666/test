@@ -11,7 +11,7 @@ function App() {
       <>
         <Header />
         <Routes>
-          <Route path="/open-account/new" element={<OpenAccountNew />} />
+          <Route path="/" element={<OpenAccountNew />} />
         </Routes>
         <Footer />
       </>

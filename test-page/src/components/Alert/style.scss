@@ -58,7 +58,7 @@
 
 .btn-alert-more {
   margin-left: 8px;
-  padding-left: 6px;
+  padding-left: 6.5px;
   padding-bottom: 8px;
   letter-spacing: 3px;
   font-weight: bold;
@@ -77,4 +77,20 @@
   color: $white;
   font-size: 28px;
   transform: rotate(45deg);
+  transition: 1s;
+}
+
+.btn-alert-confirm:hover,
+.btn-alert-more:hover {
+  box-shadow: 1px 1px 10px 1px $grey;
+  filter: brightness(110%);
+}
+
+.btn-alert-close:hover {
+  transform: rotate(315deg);
+}
+
+.btn-alert-confirm:active,
+.btn-alert-more:active {
+  transform: scale(0.97);
 }
