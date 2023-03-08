@@ -1,4 +1,43 @@
+@import "App.scss";
+
 .menu {
   min-width: 260px;
   border: 2px solid red;
+}
+
+.menu-header {
+  height: 55px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.btn-menu-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  width: 109px;
+  height: 32px;
+  border-radius: 25px;
+  @extend .normal-text;
+  font-size: 14px;
+  color: $white;
+  background: #282A2F;
+}
+
+.plus {
+  padding-top: 5px;
+}
+
+
+.btn-menu-header:hover {
+  filter: brightness(120%);
+}
+
+.btn-menu-header:active {
+  transform: scale(0.98);
 }
