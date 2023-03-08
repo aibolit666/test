@@ -137,13 +137,14 @@
 .btn-submit-wrapper {
   display: flex;
   justify-content: end;
+  margin-top: 16px;
 }
 
 .not-reserv-check-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .not-reserv-check-input {
@@ -165,7 +166,7 @@
   height: 1em;
   flex-shrink: 0;
   flex-grow: 0;
-  border: 1px solid #adb5bd;
+  border: 1px solid $light-grey;
   border-radius: 0.25em;
   margin-right: 0.5em;
   background-repeat: no-repeat;
@@ -192,7 +193,7 @@
 
 /* стили для чекбокса, находящегося в фокусе */
 .not-reserv-check-input:focus+label::before {
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem $grey;
 }
 
 /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
@@ -202,13 +203,12 @@
 
 /* стили для чекбокса, находящегося в состоянии disabled */
 .not-reserv-check-input:disabled+label::before {
-  background-color: #e9ecef;
+  background-color: $white;
 }
 
 .not-reserv-check-input-label {
   line-height: 22px;
 }
-
 
 .hero-name-render-wrapper {
   margin-left: 285px;
@@ -216,11 +216,15 @@
 }
 
 .mc {
-  margin: 8px;
+  margin-bottom: 16px;
+}
+
+.mcc {
+  margin-bottom: 8px;
 }
 
 .podpisant-input-label {
-  max-width: 240px;
+  max-width: 275px;
   line-height: 20px;
 }
 

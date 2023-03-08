@@ -102,7 +102,7 @@ const NewAccount = () => {
             </label>
           </div>
           <span className="bil-info mc">Подписанты по счёту</span>
-          <div className="bil-info-wrapper mc">
+          <div className="bil-info-wrapper mcc">
             <label htmlFor="opop" className="podpisant-input-label">
               Использовать карточку ОПОП, ранее предоставленную к счёту
             </label>
@@ -117,7 +117,7 @@ const NewAccount = () => {
               Виноградов-Лозовой Платон Михайлович
             </span>
           </div>
-          <span className="bil-info">Комиссия за открытие</span>
+          <span className="bil-info mcc">Комиссия за открытие</span>
           <div className="bil-info-wrapper">
             <label htmlFor="spisat" className="bil-input-label">
               Списать со счета
