@@ -2,11 +2,10 @@
 
 .menu {
   min-width: 260px;
-  border: 2px solid red;
 }
 
 .menu-header {
-  height: 55px;
+  height: 48px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -33,11 +32,51 @@
   padding-top: 5px;
 }
 
-
 .btn-menu-header:hover {
   filter: brightness(120%);
 }
 
 .btn-menu-header:active {
   transform: scale(0.98);
+}
+
+.menu-body {
+  @extend .normal-text;
+  color: $white;
+  font-size: 14px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  max-width: 260px;
+  list-style: none;
+  padding-left: 24px;
+  margin-bottom: 2px;
+}
+
+.menu-item-icon {
+  margin-right: 12px;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+  filter: brightness(110%);
+  background-color: $alert-background;
+}
+
+.menu-item:active {
+  transform: scale(0.99);
+}
+
+.btn-call-to-bank {
+  @extend .menu-item;
+  background: none;
+  border: none;
+  color: $white;
+  width: 100%;
+  border-top: solid $grey;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
