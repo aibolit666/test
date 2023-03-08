@@ -1,4 +1,108 @@
+@import "App.scss";
+
 .new-account {
-  min-width: 1110px;
-  border: 2px solid green;
+  background-color: $grey;
+  min-width: 1040px;
+  margin-left: 40px;
+  padding-top: 24px;
+  border-radius: 16px 0px 0px 16px;
+  padding-left: 40px;
+}
+
+.back-link {
+  text-decoration: none
+}
+
+.back-link-content {
+  @extend .normal-text;
+  font-size: 14px;
+  color: $light-grey;
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
+
+.new-account-header {
+  margin-top: 16px;
+  @extend .normal-text;
+  color: $white;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 1005px;
+  @extend .normal-text;
+}
+
+.new-account-select {
+  background: none;
+  height: 40px;
+  border-radius: 8px;
+  padding-left: 6px;
+  color: $white;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.radio-wrapper {
+  height: 79px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: row;
+}
+
+.form input {
+  display: none;
+}
+
+.label {
+  position: relative;
+  color: $white;
+  font-size: 16px;
+  text-align: center;
+  height: 70px;
+  width: 244px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 4px;
+  padding-left: 12px;
+}
+
+.label-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2px;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(45deg, rgba(62, 59, 224, 0.48) 0%, rgba(126, 193, 255, 0.48) 100%);
+  border-radius: 12px;
+  margin-right: 12px;
+}
+
+.form input:checked+label {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.form input:checked+label:after {
+  content: "✔";
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 100%;
+  background-color: #476BF0;
+  position: absolute;
+  top: 22px;
+  right: 16px;
+}
+
+.form input:checked+label>.label-logo {
+  background: linear-gradient(45deg, #624AF9 0%, #FF7B51 100%);
 }
