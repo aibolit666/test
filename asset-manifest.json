@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.55589292.css",
+    "main.js": "/static/js/main.c2b526d1.js",
+    "static/js/787.10e132ba.chunk.js": "/static/js/787.10e132ba.chunk.js",
+    "static/media/ProximaNova-Regular.otf": "/static/media/ProximaNova-Regular.ea03f826587148b7335d.otf",
+    "index.html": "/index.html",
+    "main.55589292.css.map": "/static/css/main.55589292.css.map",
+    "main.c2b526d1.js.map": "/static/js/main.c2b526d1.js.map",
+    "787.10e132ba.chunk.js.map": "/static/js/787.10e132ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.55589292.css",
+    "static/js/main.c2b526d1.js"
+  ]
+}
