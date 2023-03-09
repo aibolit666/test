@@ -5,6 +5,7 @@ import rubles from '../../assets/icons/rubles.png';
 import currency from '../../assets/icons/earth.png';
 import gk from '../../assets/icons/gk.png';
 import zakupki from '../../assets/icons/zakupki.png';
+import tooltip from '../../assets/icons/tooltip.png';
 
 const NewAccount = () => {
   return (
@@ -75,6 +76,10 @@ const NewAccount = () => {
           <div className="bil-info-wrapper">
             <label htmlFor="dogovor" className="bil-input-label">
               Договор банковского счёта
+              <a className="tooltip" href="#">
+                <img className="tooltip-img" src={tooltip} alt="tooltip" />
+                <span>Нажмите, чтобы узнать подробнее про договор банковского счёта</span>
+              </a>
             </label>
             <select className="new-account-select bil-input" id="dogovor">
               <option value="2354-023 от 10.02.2020">2354-023 от 10.02.2020</option>
@@ -105,6 +110,10 @@ const NewAccount = () => {
           <div className="bil-info-wrapper mcc">
             <label htmlFor="opop" className="podpisant-input-label">
               Использовать карточку ОПОП, ранее предоставленную к счёту
+              <a className="tooltip" href="#">
+                <img className="tooltip-img" src={tooltip} alt="tooltip" />
+                <span>Нажмите, чтобы узнать подробнее как использовать карточку ОПОП</span>
+              </a>
             </label>
             <select className="new-account-select bil-input" id="opop">
               <option value="40506.810.0.00000017552 RUB, БИК: 040702754">
