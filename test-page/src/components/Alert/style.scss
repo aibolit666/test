@@ -83,11 +83,13 @@
 
 .btn-alert-confirm:hover,
 .btn-alert-more:hover {
+  cursor: pointer;
   box-shadow: 1px 1px 10px 1px $grey;
   filter: brightness(110%);
 }
 
 .btn-alert-close:hover {
+  cursor: pointer;
   transform: rotate(315deg);
 }
 

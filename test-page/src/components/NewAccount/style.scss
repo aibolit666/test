@@ -46,6 +46,11 @@
   margin-bottom: 24px;
 }
 
+.new-account-select:hover {
+  border-color: $dark-grey;
+  cursor: pointer;
+}
+
 .radio-wrapper {
   height: 79px;
   background: rgba(255, 255, 255, 0.02);
@@ -203,6 +208,7 @@
 
 /* стили при наведении курсора на checkbox */
 .not-reserv-check-input:not(:disabled):not(:checked)+label:hover::before {
+  cursor: pointer;
   border-color: #b3d7ff;
 }
 
