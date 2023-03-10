@@ -4,7 +4,7 @@
   width: 1555px;
   height: 40px;
   margin-top: 8px;
-  margin-left: 40px;
+  margin-left: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,6 +13,7 @@
   gap: 12px;
   background: $alert-background;
   border-radius: 12px;
+  margin-bottom: 24px;
 }
 
 .alert-logo {
