@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Information from 'components/Information/Information';
 import Menu from 'components/Menu/Menu';
 import NewAccount from 'components/NewAccount/NewAccount';
-import './style.scss';
 import Alert from 'components/Alert/Alert';
+import './style.scss';
 
-const OpenAccount = () => {
+const OpenAccount: FC = () => {
   return (
     <>
       <div className="page-wrapper">

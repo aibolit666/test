@@ -1,8 +1,8 @@
-import React from 'react';
-import './style.scss';
+import React, { FC } from 'react';
 import alertLogo from './../../assets/icons/attention.png';
+import './style.scss';
 
-const Alert = () => {
+const Alert: FC = () => {
   return (
     <>
       <div className="alert">
@@ -24,7 +24,6 @@ const Alert = () => {
           <button className="btn-alert-close">+</button>
         </div>
       </div>
-      ;
     </>
   );
 };

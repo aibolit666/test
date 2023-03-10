@@ -1,5 +1,4 @@
-import React from 'react';
-import './style.scss';
+import React, { FC } from 'react';
 import plus from '../../assets/icons/plus.png';
 import download from '../../assets/icons/download.png';
 import homepage from '../../assets/icons/1.png';
@@ -17,11 +16,12 @@ import blockOEP from '../../assets/icons/12.png';
 import services from '../../assets/icons/13.png';
 import marketPlace from '../../assets/icons/14.png';
 import callBank from '../../assets/icons/call-to-bank.png';
+import './style.scss';
 
-const Menu = () => {
+const Menu: FC = () => {
   return (
     <>
-      <div className="menu">
+      <section className="menu">
         <div className="menu-header">
           <button className="btn-menu-header">
             <img className="plus" src={plus} alt="logo-plus" />
@@ -32,7 +32,7 @@ const Menu = () => {
             Импорт
           </button>
         </div>
-        <div className="menu-body">
+        <nav className="menu-body">
           <ul>
             <li className="menu-item">
               <img className="menu-item-icon" src={homepage} alt="homepage" />
@@ -95,8 +95,8 @@ const Menu = () => {
             <img className="menu-item-icon" src={callBank} alt="callBank" />
             Связаться c банком
           </button>
-        </div>
-      </div>
+        </nav>
+      </section>
     </>
   );
 };

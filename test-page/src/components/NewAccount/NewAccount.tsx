@@ -1,29 +1,43 @@
-import React from 'react';
+import React, { FC } from 'react';
 import back from '../../assets/icons/arrow.png';
-import './style.scss';
 import rubles from '../../assets/icons/rubles.png';
 import currency from '../../assets/icons/earth.png';
 import gk from '../../assets/icons/gk.png';
 import zakupki from '../../assets/icons/zakupki.png';
 import tooltip from '../../assets/icons/tooltip.png';
+import './style.scss';
+import { useForm } from 'react-hook-form';
 
-const NewAccount = () => {
+const NewAccount: FC = () => {
+  const { register, handleSubmit } = useForm({});
+
+  const onSubmit = (data: Record<string, unknown>): void => {
+    console.log(data);
+  };
+
   return (
     <>
-      <div className="new-account">
+      <main className="new-account">
         <a href="" className="back-link">
           <img className="back-arrow" src={back} alt="back" />
           <span className="back-link-content">Заявки на открытие счетов</span>
         </a>
         <h2 className="new-account-header">Открытие счёта</h2>
-        <form className="form">
-          <select className="new-account-select">
+        <form onSubmit={handleSubmit(onSubmit)} className="form">
+          <select {...register('companyName')} className="new-account-select">
             <option value="ООО «Таймырские Атомные Ледоколы»">
               ООО «Таймырские Атомные Ледоколы»
             </option>
           </select>
           <div className="radio-wrapper">
-            <input className="radio-input" type="radio" name="radio1" id="rubles" value="rubles" />
+            <input
+              {...register('currency')}
+              className="radio-input"
+              type="radio"
+              name="currency"
+              id="rubles"
+              value="rubles"
+            />
             <label className="rubles label" htmlFor="rubles">
               <div className="label-logo">
                 <img className="logo-rubles" src={rubles} alt="logo rubles" />
@@ -31,9 +45,10 @@ const NewAccount = () => {
               В рублях
             </label>
             <input
+              {...register('currency')}
               className="radio-input"
               type="radio"
-              name="radio1"
+              name="currency"
               id="currency"
               value="currency"
             />
@@ -43,7 +58,14 @@ const NewAccount = () => {
               </div>
               В валюте
             </label>
-            <input className="radio-input" type="radio" name="radio1" id="gk" value="gk" />
+            <input
+              {...register('currency')}
+              className="radio-input"
+              type="radio"
+              name="currency"
+              id="gk"
+              value="gk"
+            />
             <label className="gk label" htmlFor="gk">
               <div className="label-logo">
                 <img className="logo-gk" src={gk} alt="logo gk" />
@@ -51,9 +73,10 @@ const NewAccount = () => {
               Исполнитель ГК
             </label>
             <input
+              {...register('currency')}
               className="radio-input"
               type="radio"
-              name="radio1"
+              name="currency"
               id="zakupki"
               value="zakupki"
             />
@@ -69,7 +92,7 @@ const NewAccount = () => {
             <label htmlFor="ofis" className="bil-input-label">
               Офис обслуживания
             </label>
-            <select className="new-account-select bil-input" id="ofis">
+            <select {...register('office')} className="new-account-select bil-input" id="ofis">
               <option value=""></option>
             </select>
           </div>
@@ -81,7 +104,7 @@ const NewAccount = () => {
                 <span>Нажмите, чтобы узнать подробнее про договор банковского счёта</span>
               </a>
             </label>
-            <select className="new-account-select bil-input" id="dogovor">
+            <select {...register('dogovor')} className="new-account-select bil-input" id="dogovor">
               <option value="2354-023 от 10.02.2020">2354-023 от 10.02.2020</option>
             </select>
           </div>
@@ -89,7 +112,7 @@ const NewAccount = () => {
             <label htmlFor="reserv" className="bil-input-label">
               Зарезервированный счёт
             </label>
-            <select className="new-account-select bil-input" id="reserv">
+            <select {...register('reserved')} className="new-account-select bil-input" id="reserv">
               <option value="40506.810.0.00000001146 RUB, БИК: 046577422">
                 40506.810.0.00000001146 RUB, БИК: 046577422
               </option>
@@ -97,6 +120,7 @@ const NewAccount = () => {
           </div>
           <div className="not-reserv-check-wrapper">
             <input
+              {...register('openNotReserved')}
               type="checkbox"
               id="not-reserv-check"
               className="not-reserv-check-input"
@@ -115,7 +139,7 @@ const NewAccount = () => {
                 <span>Нажмите, чтобы узнать подробнее как использовать карточку ОПОП</span>
               </a>
             </label>
-            <select className="new-account-select bil-input" id="opop">
+            <select {...register('opop')} className="new-account-select bil-input" id="opop">
               <option value="40506.810.0.00000017552 RUB, БИК: 040702754">
                 40506.810.0.00000017552 RUB, БИК: 040702754
               </option>
@@ -131,7 +155,11 @@ const NewAccount = () => {
             <label htmlFor="spisat" className="bil-input-label">
               Списать со счета
             </label>
-            <select className="new-account-select bil-input" id="spisat">
+            <select
+              {...register('companyBil')}
+              className="new-account-select bil-input"
+              id="spisat"
+            >
               <option value="40506.810.0.00000017554 RUB, БИК: 044525823">
                 40506.810.0.00000017554 RUB, БИК: 044525823
               </option>
@@ -141,7 +169,7 @@ const NewAccount = () => {
             <input type="submit" value="Отправить" className="btn-submit" />
           </div>
         </form>
-      </div>
+      </main>
     </>
   );
 };

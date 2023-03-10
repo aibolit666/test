@@ -1,9 +1,9 @@
-import React from 'react';
-import './style.scss';
+import React, { FC } from 'react';
 import logo from './../../assets/img/logo.png';
 import topLogo from './../../assets/icons/logo-tree-banks.png';
+import './style.scss';
 
-const Header = () => {
+const Header: FC = () => {
   return (
     <>
       <header className="header">
