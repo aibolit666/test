@@ -81,3 +81,53 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+@media screen and (max-width: 1280px) {
+  .menu {
+    min-width: 173px;
+  }
+
+  .menu-header {
+    height: 32px;
+    padding-left: 6px;
+  }
+
+  .btn-menu-header {
+    gap: 5px;
+    width: 72px;
+    height: 21px;
+    font-size: 9px;
+  }
+
+  .plus {
+    padding-top: 3px;
+  }
+
+  .plus,
+  .download {
+    width: 12px;
+    height: 12px;
+  }
+
+  .menu-body {
+    font-size: 9px;
+  }
+
+  .menu-item {
+    height: 26px;
+    max-width: 173px;
+    padding-left: 16px;
+    margin-bottom: 1px;
+  }
+
+  .menu-item-icon {
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+  }
+
+  .btn-call-to-bank {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}

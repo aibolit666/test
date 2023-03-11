@@ -16,3 +16,9 @@
   justify-content: space-between;
   min-height: 860px;
 }
+
+@media screen and (max-width: 1280px) {
+  .new-account-wrapper-content {
+    min-height: 720px;
+  }
+}

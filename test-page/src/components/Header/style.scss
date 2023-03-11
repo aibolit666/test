@@ -105,3 +105,59 @@
 .btn-exit:active {
   transform: scale(0.97);
 }
+
+@media screen and (max-width: 1280px) {
+  .header {
+    min-width: 1262px;
+    height: 53px;
+    margin-right: 16px;
+  }
+
+  .logo-wrapper {
+    width: 173px;
+    height: 53px;
+  }
+
+  .logo-pic {
+    width: 145px;
+    height: 33px;
+    padding-top: 11px;
+    padding-left: 26px;
+  }
+
+  .top {
+    margin-left: 26px;
+    height: 24px;
+  }
+
+  .top-content-wrapper {
+    margin-left: 8px;
+  }
+
+  .top-content-top,
+  .top-content-bottom {
+    line-height: 12px;
+  }
+
+  .hero-block {
+    width: max-content;
+    height: 25px;
+  }
+
+  .hero-name {
+    font-size: 10px;
+    line-height: 10px;
+    margin-bottom: 5px;
+  }
+
+  .hero-company {
+    font-size: 9px;
+  }
+
+  .btn-auth-block {
+    width: 89px;
+    height: 26px;
+    margin-left: 23px;
+    margin-right: 20px;
+  }
+}

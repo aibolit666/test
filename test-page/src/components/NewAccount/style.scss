@@ -280,3 +280,149 @@
 .btn-submit:active {
   transform: scale(0.98);
 }
+
+@media screen and (max-width: 1280px) {
+  .new-account {
+    min-width: 693px;
+    margin-left: 20px;
+    padding-top: 10px;
+    border-radius: 10px 0px 0px 10px;
+    padding-left: 26px;
+  }
+
+  .back-link-content {
+    font-size: 9px;
+    margin-left: 6px;
+    margin-bottom: 2px;
+  }
+
+  .new-account-header {
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    width: 670px;
+  }
+
+  .new-account-select {
+    height: 26px;
+    border-radius: 5px;
+    padding-left: 4px;
+    font-size: 10px;
+    margin-bottom: 13px;
+  }
+
+  .radio-wrapper {
+    height: 52px;
+    border-radius: 5px;
+    margin-bottom: 13px;
+  }
+
+  .label {
+    font-size: 10px;
+    height: 46px;
+    width: 162px;
+    border-radius: 5px;
+    margin: 2px;
+    padding-left: 8px;
+  }
+
+  .label-logo {
+    padding-left: 2px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin-right: 8px;
+  }
+
+  .zakupki,
+  .gk {
+    line-height: 12px;
+  }
+
+  .radio-input:checked+label:after {
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    top: 14px;
+    right: 9px;
+  }
+
+  .bil-info {
+    margin-bottom: 10px;
+  }
+
+  .bil-info-wrapper {
+    font-size: 12px;
+    height: 26px;
+    margin-bottom: 10px;
+  }
+
+  .bil-input-label {
+    line-height: 32px;
+  }
+
+  .bil-input {
+    width: 480px;
+  }
+
+  .btn-submit-wrapper {
+    margin-top: 10px;
+  }
+
+  .tooltip-img {
+    height: 14px;
+  }
+
+  .tooltip span {
+    line-height: 16px;
+  }
+
+  .tooltip:hover span {
+    border-radius: 2px;
+  }
+
+  .podpisant-input-label {
+    max-width: 175px !important;
+    justify-content: space-between;
+  }
+
+  .not-reserv-check-wrapper {
+    margin-left: 85px;
+    margin-bottom: 16px;
+  }
+
+  .not-reserv-check-input-label {
+    line-height: 18px;
+    font-size: 14px;
+  }
+
+  .hero-name-render-wrapper {
+    margin-left: 190px;
+    margin-bottom: 21px;
+  }
+
+  .mc {
+    margin-bottom: 10px;
+  }
+
+  .mcc {
+    margin-bottom: 5px;
+  }
+
+  .podpisant-input-label {
+    max-width: 183px;
+    line-height: 13px;
+  }
+
+  .btn-submit {
+    font-size: 12px;
+    padding: 0px 32px; //
+    gap: 12px; //
+    width: 101px;
+    height: 32px;
+    border-radius: 25px; //
+  }
+}
