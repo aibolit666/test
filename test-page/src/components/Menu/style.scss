@@ -82,7 +82,51 @@
   padding-bottom: 30px;
 }
 
-@media screen and (max-width: 1280px) {
+
+@media screen and (max-width: $max-width-1440-1920) {
+  .menu {
+    min-width: 195px;
+  }
+
+  .menu-header {
+    height: 36px;
+    padding-left: 7px;
+  }
+
+  .btn-menu-header {
+    gap: 6px;
+    width: 82px;
+    height: 24px;
+    border-radius: 18px;
+    font-size: 10px;
+  }
+
+  .plus {
+    padding-top: 3px;
+  }
+
+  .menu-body {
+    font-size: 10px;
+  }
+
+  .menu-item {
+    height: 30px;
+    max-width: 195px;
+    padding-left: 18px;
+    margin-bottom: 1px;
+  }
+
+  .menu-item-icon {
+    margin-right: 9px;
+  }
+
+  .btn-call-to-bank {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+}
+
+@media screen and (max-width: $max-width-1280-1440) {
   .menu {
     min-width: 173px;
   }

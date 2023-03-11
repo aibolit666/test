@@ -17,13 +17,14 @@
 .logo-wrapper {
   width: 260px;
   height: 80px;
+  display: flex;
+  align-items: center;
 }
 
 .logo-pic {
   cursor: pointer;
   display: flex;
   justify-content: start;
-  padding-top: 16px;
   padding-left: 22px;
 }
 
@@ -106,7 +107,64 @@
   transform: scale(0.97);
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: $max-width-1440-1920) {
+  .header {
+    min-width: 1421px;
+    height: 60px;
+  }
+
+  .logo-wrapper {
+    width: 195px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-pic {
+    width: 165px;
+    height: 38px;
+    padding-top: 0px;
+    padding-left: 16px;
+  }
+
+  .top {
+    margin-left: 30px;
+    height: 27px;
+  }
+
+  .top-content-wrapper {
+    margin-left: 12px;
+  }
+
+  .top-content-top,
+  .top-content-bottom {
+    line-height: 16px;
+  }
+
+  .hero-block {
+    width: 150px;
+    height: 28px;
+  }
+
+  .hero-name {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 6px;
+  }
+
+  .hero-company {
+    font-size: 10px;
+  }
+
+  .btn-auth-block {
+    width: 100px;
+    height: 30px;
+    margin-left: 26px;
+    margin-right: 22px;
+  }
+}
+
+@media screen and (max-width: $max-width-1280-1440) {
   .header {
     min-width: 1262px;
     height: 53px;
@@ -116,12 +174,13 @@
   .logo-wrapper {
     width: 173px;
     height: 53px;
+    display: flex;
+    align-items: center;
   }
 
   .logo-pic {
     width: 145px;
     height: 33px;
-    padding-top: 11px;
     padding-left: 26px;
   }
 

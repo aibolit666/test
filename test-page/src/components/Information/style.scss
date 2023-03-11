@@ -30,7 +30,31 @@
   margin-bottom: 8px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: $max-width-1440-1920) {
+  .info-aside {
+    min-width: 330px;
+    padding: 18px;
+    margin-right: 10px;
+  }
+
+  .info-aside-information {
+    max-width: 275px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 18px;
+    margin-bottom: 18px;
+  }
+
+  .info-aside-ul {
+    padding-left: 18px;
+  }
+
+  .info-aside-content {
+    margin-bottom: 6px;
+  }
+}
+
+@media screen and (max-width: $max-width-1280-1440) {
   .info-aside {
     min-width: 290px;
     padding: 16px;

@@ -70,7 +70,7 @@ const NewAccount: FC = () => {
               <div className="label-logo">
                 <img className="logo-gk" src={gk} alt="logo gk" />
               </div>
-              Исполнитель<br></br>ГК
+              Исполнитель ГК
             </label>
             <input
               {...register('currency')}
@@ -84,7 +84,7 @@ const NewAccount: FC = () => {
               <div className="label-logo">
                 <img className="logo-zakupki" src={zakupki} alt="logo zakupki" />
               </div>
-              Участник<br></br>закупок
+              Участник закупок
             </label>
           </div>
           <span className="bil-info">Информация о счете</span>
