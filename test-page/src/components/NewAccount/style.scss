@@ -461,6 +461,11 @@
     margin-right: 8px;
   }
 
+  .zakupki-context,
+  .gk-context {
+    max-width: 50px;
+  }
+
   .zakupki,
   .gk {
     line-height: 12px;
@@ -475,6 +480,7 @@
   }
 
   .bil-info {
+    font-size: 14px;
     margin-bottom: 10px;
   }
 
@@ -485,6 +491,7 @@
   }
 
   .bil-input-label {
+    font-size: 12px;
     line-height: 32px;
   }
 
@@ -509,17 +516,18 @@
   }
 
   .podpisant-input-label {
+    font-size: 12px;
     max-width: 175px !important;
     justify-content: space-between;
   }
 
   .not-reserv-check-wrapper {
-    margin-left: 85px;
+    margin-left: 87px;
     margin-bottom: 16px;
   }
 
   .not-reserv-check-input-label {
-    line-height: 18px;
+    line-height: 14px;
     font-size: 14px;
   }
 
@@ -543,10 +551,7 @@
 
   .btn-submit {
     font-size: 12px;
-    padding: 0px 32px; //
-    gap: 12px; //
     width: 101px;
     height: 32px;
-    border-radius: 25px; //
   }
 }

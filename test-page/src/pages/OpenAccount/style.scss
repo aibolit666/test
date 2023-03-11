@@ -14,12 +14,12 @@
 .new-account-wrapper-content {
   display: flex;
   justify-content: space-between;
-  min-height: 1080px;
+  min-height: 860px;
 }
 
 @media screen and (max-width: $max-width-1440-1920) {
   .new-account-wrapper-content {
-    min-height: 900px;
+    min-height: 720px;
   }
 }
 
