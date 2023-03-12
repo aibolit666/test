@@ -19,7 +19,7 @@ const Alert: FC = () => {
           </div>
         </div>
         <div className="alert-btns">
-          <button className="btn-alert-confirm">Исполнять</button>
+          <button className="btn-alert-confirm">Исполнить</button>
           <button className="btn-alert-more">...</button>
           <button className="btn-alert-close">+</button>
         </div>

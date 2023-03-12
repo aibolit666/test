@@ -108,7 +108,7 @@ const NewAccount: FC = () => {
               <option value="2354-023 от 10.02.2020">2354-023 от 10.02.2020</option>
             </select>
           </div>
-          <div className="bil-info-wrapper">
+          <div className="bil-info-wrapper mcc">
             <label htmlFor="reserv" className="bil-input-label">
               Зарезервированный счёт
             </label>
@@ -150,7 +150,7 @@ const NewAccount: FC = () => {
               Виноградов-Лозовой Платон Михайлович
             </span>
           </div>
-          <span className="bil-info mcc">Комиссия за открытие</span>
+          <span className="bil-info ">Комиссия за открытие</span>
           <div className="bil-info-wrapper">
             <label htmlFor="spisat" className="bil-input-label">
               Списать со счета

@@ -5,11 +5,13 @@
 }
 
 .menu-header {
-  height: 48px;
+  height: 43px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-left: 10px;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-top: 5px;
 }
 
 .btn-menu-header {
@@ -71,6 +73,11 @@
   transform: scale(0.99);
 }
 
+.market-place-content {
+  max-width: 180px;
+  line-height: 20px;
+}
+
 .btn-call-to-bank {
   @extend .menu-item;
   background: none;
@@ -78,7 +85,8 @@
   color: $white;
   width: 100%;
   border-top: solid $grey;
-  padding-top: 30px;
+  letter-spacing: 0.5px;
+  padding-top: 32px;
   padding-bottom: 30px;
 }
 

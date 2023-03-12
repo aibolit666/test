@@ -3,7 +3,7 @@
 .new-account {
   background-color: $grey;
   min-width: 1040px;
-  margin-left: 30px;
+  margin-left: 20px;
   padding-top: 24px;
   border-radius: 16px 0px 0px 16px;
   padding-left: 40px;
@@ -42,8 +42,9 @@
   border-radius: 8px;
   padding-left: 6px;
   color: $white;
-  font-size: 16px;
-  margin-bottom: 20px;
+  font-size: 14px;
+  letter-spacing: 0.9px;
+  margin-bottom: 16px;
 }
 
 .new-account-select:hover {
@@ -55,7 +56,7 @@
   height: 79px;
   background: rgba(255, 255, 255, 0.02);
   border-radius: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   display: flex;
   flex-direction: row;
 }
@@ -120,7 +121,7 @@
   @extend .normal-text;
   font-weight: 700;
   color: $white;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .bil-info-wrapper {
@@ -170,7 +171,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .not-reserv-check-input {
@@ -239,7 +240,7 @@
 
 .hero-name-render-wrapper {
   margin-left: 285px;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .mc {
@@ -247,7 +248,7 @@
 }
 
 .mcc {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .podpisant-input-label {

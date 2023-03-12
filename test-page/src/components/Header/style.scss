@@ -56,7 +56,7 @@
 }
 
 .hero-block {
-  width: 200px;
+  width: max-content;
   height: 38px;
 }
 
@@ -78,7 +78,7 @@
   width: 134px;
   height: 40px;
   margin-left: 35px;
-  margin-right: 30px;
+  margin-right: 35px;
   display: flex;
   align-items: center;
   justify-content: space-between;

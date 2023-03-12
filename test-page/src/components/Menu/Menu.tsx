@@ -88,7 +88,7 @@ const Menu: FC = () => {
             </li>
             <li className="menu-item">
               <img className="menu-item-icon" src={marketPlace} alt="marketPlace" />
-              Торговая площадка ЭТП ГПБ
+              <div className="market-place-content">Торговая площадка ЭТП ГПБ</div>
             </li>
           </ul>
           <button className="btn-call-to-bank">
