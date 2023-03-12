@@ -102,15 +102,27 @@
   }
 
   .btn-menu-header {
+    display: flex;
+    justify-content: start;
+    padding-left: 12px;
     gap: 6px;
-    width: 82px;
-    height: 24px;
+    width: 92px;
+    height: 28px;
     border-radius: 18px;
-    font-size: 10px;
+    font-size: 9px;
+    line-height: 11px;
   }
 
   .plus {
     padding-top: 3px;
+  }
+
+  .plus {
+    height: 18px;
+  }
+
+  .download {
+    height: 14px;
   }
 
   .menu-body {
@@ -129,6 +141,7 @@
   }
 
   .btn-call-to-bank {
+    font-size: 12px;
     padding-top: 22px;
     padding-bottom: 22px;
   }
@@ -141,14 +154,16 @@
 
   .menu-header {
     height: 32px;
-    padding-left: 6px;
+    padding-left: 15px;
+    padding-right: 0px;
   }
 
   .btn-menu-header {
-    gap: 5px;
-    width: 72px;
-    height: 21px;
-    font-size: 9px;
+    gap: 3px;
+    width: 80px;
+    height: 22px;
+    font-size: 8px;
+    line-height: 9px;
   }
 
   .plus {
@@ -179,6 +194,8 @@
   }
 
   .btn-call-to-bank {
+    font-size: 10px;
+    max-width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
   }
