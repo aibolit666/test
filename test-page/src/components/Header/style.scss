@@ -1,0 +1,222 @@
+@import "App.scss";
+
+.header {
+  background-color: $background;
+  min-width: 1895px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+}
+
+.logo-wrapper {
+  width: 260px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-pic {
+  cursor: pointer;
+  display: flex;
+  justify-content: start;
+  padding-left: 22px;
+}
+
+.top {
+  margin-left: 40px;
+  width: max-content;
+  height: 36px;
+  display: flex;
+}
+
+.top-content-wrapper {
+  margin-left: 12px;
+}
+
+.top-content-top {
+  color: $light-grey;
+  @extend .small-text;
+  line-height: 18px;
+}
+
+.top-content-bottom {
+  color: $dark-grey;
+  @extend .small-text;
+  line-height: 18px;
+}
+
+.right-side {
+  display: flex;
+}
+
+.hero-block {
+  width: max-content;
+  height: 38px;
+}
+
+.hero-name {
+  color: $white;
+  @extend .normal-text;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 8px;
+}
+
+.hero-company {
+  color: $normal-grey;
+  @extend .small-text;
+  font-size: 14px;
+}
+
+.btn-auth-block {
+  width: 134px;
+  height: 40px;
+  margin-left: 35px;
+  margin-right: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-settings,
+.btn-notification,
+.btn-exit {
+  background: none;
+  border: none;
+  width: 22px;
+  height: 22px;
+  fill: $white;
+}
+
+.btn-settings:hover,
+.btn-notification:hover,
+.btn-exit:hover {
+  cursor: pointer;
+  fill: $wheat;
+}
+
+.btn-settings:active,
+.btn-notification:active,
+.btn-exit:active {
+  transform: scale(0.97);
+}
+
+@media screen and (max-width: $max-width-1440-1920) {
+  .header {
+    min-width: 1421px;
+    height: 60px;
+  }
+
+  .logo-wrapper {
+    width: 195px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-pic {
+    width: 165px;
+    height: 38px;
+    padding-top: 0px;
+    padding-left: 16px;
+  }
+
+  .top {
+    margin-left: 30px;
+    height: 27px;
+  }
+
+  .top-content-wrapper {
+    margin-left: 12px;
+  }
+
+  .top-content-top,
+  .top-content-bottom {
+    line-height: 16px;
+  }
+
+  .hero-block {
+    width: 150px;
+    height: 28px;
+  }
+
+  .hero-name {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 6px;
+  }
+
+  .hero-company {
+    font-size: 10px;
+  }
+
+  .btn-auth-block {
+    width: 100px;
+    height: 30px;
+    margin-left: 26px;
+    margin-right: 22px;
+  }
+}
+
+@media screen and (max-width: $max-width-1280-1440) {
+  .header {
+    min-width: 1262px;
+    height: 53px;
+    margin-right: 16px;
+  }
+
+  .logo-wrapper {
+    width: 193px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-pic {
+    width: 145px;
+    height: 33px;
+    padding-left: 26px;
+  }
+
+  .top {
+    margin-left: 26px;
+    height: 24px;
+  }
+
+  .top-content-wrapper {
+    margin-left: 8px;
+  }
+
+  .top-content-top,
+  .top-content-bottom {
+    line-height: 12px;
+  }
+
+  .hero-block {
+    width: max-content;
+    height: 25px;
+  }
+
+  .hero-name {
+    font-size: 10px;
+    line-height: 10px;
+    margin-bottom: 5px;
+  }
+
+  .hero-company {
+    font-size: 9px;
+  }
+
+  .btn-auth-block {
+    width: 89px;
+    height: 26px;
+    margin-left: 23px;
+    margin-right: 20px;
+  }
+}

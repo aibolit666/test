@@ -1,0 +1,202 @@
+@import "App.scss";
+
+.menu {
+  min-width: 260px;
+}
+
+.menu-header {
+  height: 43px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+.btn-menu-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  width: 109px;
+  height: 32px;
+  border-radius: 25px;
+  @extend .normal-text;
+  font-size: 14px;
+  color: $white;
+  background: #282A2F;
+}
+
+.plus {
+  padding-top: 5px;
+}
+
+.btn-menu-header:hover {
+  cursor: pointer;
+  filter: brightness(120%);
+}
+
+.btn-menu-header:active {
+  transform: scale(0.98);
+}
+
+.menu-body {
+  @extend .normal-text;
+  color: $white;
+  font-size: 14px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  max-width: 260px;
+  list-style: none;
+  padding-left: 24px;
+  margin-bottom: 2px;
+}
+
+.menu-item-icon {
+  margin-right: 12px;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+  filter: brightness(110%);
+  background-color: $alert-background;
+}
+
+.menu-item:active {
+  transform: scale(0.99);
+}
+
+.market-place-content {
+  max-width: 180px;
+  line-height: 20px;
+}
+
+.btn-call-to-bank {
+  @extend .menu-item;
+  background: none;
+  border: none;
+  color: $white;
+  width: 100%;
+  border-top: solid $grey;
+  letter-spacing: 0.5px;
+  padding-top: 32px;
+  padding-bottom: 30px;
+}
+
+
+@media screen and (max-width: $max-width-1440-1920) {
+  .menu {
+    min-width: 195px;
+  }
+
+  .menu-header {
+    height: 36px;
+    padding-left: 7px;
+  }
+
+  .btn-menu-header {
+    display: flex;
+    justify-content: start;
+    padding-left: 12px;
+    gap: 6px;
+    width: 92px;
+    height: 28px;
+    border-radius: 18px;
+    font-size: 9px;
+    line-height: 11px;
+  }
+
+  .plus {
+    padding-top: 3px;
+  }
+
+  .plus {
+    height: 18px;
+  }
+
+  .download {
+    height: 14px;
+  }
+
+  .menu-body {
+    font-size: 10px;
+  }
+
+  .menu-item {
+    height: 30px;
+    max-width: 195px;
+    padding-left: 18px;
+    margin-bottom: 1px;
+  }
+
+  .menu-item-icon {
+    margin-right: 9px;
+  }
+
+  .btn-call-to-bank {
+    font-size: 12px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+}
+
+@media screen and (max-width: $max-width-1280-1440) {
+  .menu {
+    min-width: 173px;
+  }
+
+  .menu-header {
+    height: 32px;
+    padding-left: 15px;
+    padding-right: 0px;
+  }
+
+  .btn-menu-header {
+    gap: 3px;
+    width: 80px;
+    height: 22px;
+    font-size: 8px;
+    line-height: 9px;
+  }
+
+  .plus {
+    padding-top: 3px;
+  }
+
+  .plus,
+  .download {
+    width: 12px;
+    height: 12px;
+  }
+
+  .menu-body {
+    font-size: 9px;
+  }
+
+  .menu-item {
+    height: 26px;
+    max-width: 173px;
+    padding-left: 16px;
+    margin-bottom: 1px;
+  }
+
+  .menu-item-icon {
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+  }
+
+  .btn-call-to-bank {
+    font-size: 10px;
+    max-width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
