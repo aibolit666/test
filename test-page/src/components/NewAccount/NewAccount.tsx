@@ -87,7 +87,7 @@ const NewAccount: FC = () => {
               <div className="zakupki-context">Участник закупок</div>
             </label>
           </div>
-          <span className="bil-info">Информация о счете</span>
+          <span className="bil-info">Информация о счёте</span>
           <div className="bil-info-wrapper">
             <label htmlFor="ofis" className="bil-input-label">
               Офис обслуживания
